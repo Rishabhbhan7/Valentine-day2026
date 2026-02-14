@@ -6,9 +6,9 @@ const targetDate = new Date("March 15, 2026 00:00:00").getTime();
 
 // Add your image paths here for the background slideshow
 const bgImages = [
-    'https://source.unsplash.com/random/1920x1080/?sunset,couple',
-    'https://source.unsplash.com/random/1920x1080/?wedding,flowers',
-    'https://source.unsplash.com/random/1920x1080/?love,pink'
+    'https://pixedge.vercel.app/i/lt35apwm',
+    'https://pixedge.vercel.app/i/wbj65pde',
+    'https://pixedge.vercel.app/i/7r5tj6n6'
 ];
 
 /* ========================
@@ -26,7 +26,7 @@ function updateTimer() {
     const second = 1000;
     const minute = second * 60;
     const hour = minute * 60;
-    const day = hour * 24;
+    const day = hour * 23;
 
     document.getElementById("days").innerText = Math.floor(gap / day);
     document.getElementById("hours").innerText = Math.floor((gap % day) / hour);
