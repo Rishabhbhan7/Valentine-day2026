@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="bg-slideshow"></div>
+    
+    <div class="hearts-container"></div>
+
+    <div class="container">
+        
+        <header class="glass-panel">
+            <h1>Happy Valentine's Day My Wifey 😘</h1>
+            <p class="subtitle">To the moon and back</p>
+        </header>
+
+        <section id="countdown" class="glass-panel">
+            <h2><i class="fas fa-plane-departure"></i> Next Adventure In:</h2>
+            <div id="timer">
+                <div class="time-box"><span id="days">00</span>Days</div>
+                <div class="time-box"><span id="hours">00</span>Hrs</div>
+                <div class="time-box"><span id="minutes">00</span>Mins</div>
+                <div class="time-box"><span id="seconds">00</span>Secs</div>
+            </div>
+        </section>
+
+        <section id="timeline" class="glass-panel">
+            <h2><i class="fas fa-hourglass-half"></i> Our Love Story</h2>
+            <div class="timeline-container">
+                <div class="timeline-item left">
+                    <div class="content">
+                        <h3>First Date</h3>
+                        <p>The day it all started.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="content">
+                        <h3>First Trip</h3>
+                        <p>Memories we will never forget.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="content">
+                        <h3>She Said Yes</h3>
+                        <p>The best day of my life.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="content">
+                        <h3>Upcoming Trip</h3>
+                        <p>Counting down the days!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="glass-panel">
+            <h2><i class="fas fa-images"></i> Our Moments</h2>
+            <div class="gallery-grid">
+                <img src="https://source.unsplash.com/random/400x400/?couple,love" alt="Us 1" class="gallery-img">
+                <img src="https://source.unsplash.com/random/400x400/?wedding" alt="Us 2" class="gallery-img">
+                <img src="https://source.unsplash.com/random/400x400/?date" alt="Us 3" class="gallery-img">
+                <img src="https://source.unsplash.com/random/400x400/?kiss" alt="Us 4" class="gallery-img">
+                <img src="https://source.unsplash.com/random/400x400/?hug" alt="Us 5" class="gallery-img">
+                <img src="https://source.unsplash.com/random/400x400/?romance" alt="Us 6" class="gallery-img">
+            </div>
+        </section>
+
+        <section id="game" class="glass-panel">
+            <h2><i class="fas fa-gamepad"></i> Catch the Heart!</h2>
+            <p>Score 10 points to win a prize!</p>
+            <div class="game-info">Score: <span id="score">0</span></div>
+            <div id="game-area">
+                <div id="target-heart"><i class="fas fa-heart"></i></div>
+            </div>
+            <div id="win-message" class="hidden">
+                <h3>You Won! ❤️</h3>
+                <p>I love you more than words can say!</p>
+                <button onclick="resetGame()">Play Again</button>
+            </div>
+        </section>
+
+        <footer>
+            <p>Made with ❤️ forever</p>
+        </footer>
+    </div>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
